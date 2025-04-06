@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Фон для темной темы -->
+  <rect width="800" height="500" fill="#282828" />
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Сравнение методов поиска изображений</text>
+
+  <!-- SIFT -->
+  <g transform="translate(70, 100)">
+    <rect width="160" height="350" rx="10" fill="#333333" stroke="#4a4a4a" stroke-width="1" />
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">SIFT</text>
+    <text x="80" y="60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#cccccc">Объекты и формы</text>
+
+    <!-- Иконка -->
+    <circle cx="80" cy="100" r="30" fill="#6366f1" opacity="0.2" />
+    <polygon points="65,90 95,90 95,110 65,110" fill="none" stroke="#6366f1" stroke-width="2" />
+    <circle cx="80" cy="100" r="10" fill="none" stroke="#6366f1" stroke-width="2" />
+    <line x1="65" y1="90" x2="80" y2="100" stroke="#6366f1" stroke-width="1" />
+
+    <!-- Характеристики -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Скорость:</text>
+    <rect x="100" y="140" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="140" width="30" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Точность:</text>
+    <rect x="100" y="170" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="170" width="45" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Установка:</text>
+    <rect x="100" y="200" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="200" width="45" height="12" rx="6" fill="#10b981" />
+
+    <!-- Плюсы и минусы -->
+    <text x="20" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Устойчив к</text>
+    <text x="25" y="260" font-family="Arial, sans-serif" font-size="14" fill="#10b981">масштабу</text>
+    <text x="20" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Высокая точность</text>
+
+    <text x="20" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Требует больше</text>
+    <text x="25" y="330" font-family="Arial, sans-serif" font-size="14" fill="#ef4444">ресурсов</text>
+    <text x="20" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Средняя скорость</text>
+  </g>
+
+  <!-- Гистограмма -->
+  <g transform="translate(240, 100)">
+    <rect width="160" height="350" rx="10" fill="#333333" stroke="#4a4a4a" stroke-width="1" />
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">Цветовая</text>
+    <text x="80" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">гистограмма</text>
+
+    <!-- Иконка -->
+    <rect x="60" y="80" width="10" height="40" fill="#f87171" />
+    <rect x="75" y="90" width="10" height="30" fill="#60a5fa" />
+    <rect x="90" y="100" width="10" height="20" fill="#34d399" />
+    <line x1="55" y1="120" x2="105" y2="120" stroke="#6366f1" stroke-width="1" />
+
+    <!-- Характеристики -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Скорость:</text>
+    <rect x="100" y="140" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="140" width="50" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Точность:</text>
+    <rect x="100" y="170" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="170" width="30" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Установка:</text>
+    <rect x="100" y="200" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="200" width="50" height="12" rx="6" fill="#10b981" />
+
+    <!-- Плюсы и минусы -->
+    <text x="20" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Очень быстрый</text>
+    <text x="20" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Поиск по цвету</text>
+    <text x="20" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Для сцен/пейзажей</text>
+
+    <text x="20" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Не учитывает</text>
+    <text x="25" y="330" font-family="Arial, sans-serif" font-size="14" fill="#ef4444">структуру</text>
+    <text x="20" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Ложные совпадения</text>
+  </g>
+
+  <!-- ResNet50 -->
+  <g transform="translate(410, 100)">
+    <rect width="160" height="350" rx="10" fill="#333333" stroke="#4a4a4a" stroke-width="1" />
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">CNN</text>
+    <text x="80" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">(ResNet50)</text>
+
+    <!-- Иконка -->
+    <circle cx="80" cy="100" r="30" fill="#6366f1" opacity="0.2" />
+    <rect x="65" y="85" width="30" height="30" fill="none" stroke="#6366f1" stroke-width="1.5" />
+    <line x1="65" y1="93" x2="95" y2="93" stroke="#6366f1" stroke-width="1.5" />
+    <line x1="65" y1="100" x2="95" y2="100" stroke="#6366f1" stroke-width="1.5" />
+    <line x1="65" y1="107" x2="95" y2="107" stroke="#6366f1" stroke-width="1.5" />
+
+    <!-- Характеристики -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Скорость:</text>
+    <rect x="100" y="140" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="140" width="10" height="12" rx="6" fill="#10b981" />
+    <text x="20" y="164" font-family="Arial, sans-serif" font-size="10" fill="#cccccc">~0.5-2 сек/изображение*</text>
+
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Точность:</text>
+    <rect x="100" y="180" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="180" width="50" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Установка:</text>
+    <rect x="100" y="210" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="210" width="25" height="12" rx="6" fill="#10b981" />
+
+    <!-- Плюсы и минусы -->
+    <text x="20" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Высочайшая</text>
+    <text x="25" y="260" font-family="Arial, sans-serif" font-size="14" fill="#10b981">точность</text>
+    <text x="20" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Глубокий анализ</text>
+
+    <text x="20" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Требует GPU</text>
+    <text x="20" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Очень медленный</text>
+    <text x="20" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Зависит от обучения</text>
+  </g>
+
+  <!-- DeepFace -->
+  <g transform="translate(580, 100)">
+    <rect width="160" height="350" rx="10" fill="#333333" stroke="#4a4a4a" stroke-width="1" />
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6366f1">DeepFace</text>
+    <text x="80" y="60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#cccccc">Распознавание лиц</text>
+
+    <!-- Иконка -->
+    <circle cx="80" cy="100" r="20" fill="#6366f1" opacity="0.2" />
+    <circle cx="80" cy="90" r="3" fill="#6366f1" />
+    <circle cx="73" cy="95" r="2" fill="#6366f1" />
+    <circle cx="87" cy="95" r="2" fill="#6366f1" />
+    <path d="M70,105 Q80,115 90,105" fill="none" stroke="#6366f1" stroke-width="1.5" />
+
+    <!-- Характеристики -->
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Скорость:</text>
+    <rect x="100" y="140" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="140" width="20" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Точность:</text>
+    <rect x="100" y="170" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="170" width="50" height="12" rx="6" fill="#10b981" />
+
+    <text x="20" y="210" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Установка:</text>
+    <rect x="100" y="200" width="50" height="12" rx="6" fill="#4a4a4a" />
+    <rect x="100" y="200" width="15" height="12" rx="6" fill="#10b981" />
+
+    <!-- Плюсы и минусы -->
+    <text x="20" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Высокая точность</text>
+    <text x="20" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Нейросети</text>
+    <text x="20" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10b981">✓ Устойчив к ракурсу</text>
+
+    <text x="20" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Требует установки</text>
+    <text x="20" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Только для лиц</text>
+    <text x="20" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444">✗ Медленный</text>
+  </g>
+
+  <!-- Нижняя подпись -->
+  <text x="400" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#cccccc">Выберите метод в зависимости от типа изображений и требуемой точности</text>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#999999">* Скорость зависит от наличия GPU и размера изображения</text>
+</svg>

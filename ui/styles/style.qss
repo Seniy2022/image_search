@@ -1,0 +1,329 @@
+/* Чекбоксы */
+QCheckBox {
+    spacing: 8px;
+    color: var(--text-color);
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+}
+
+QCheckBox::indicator:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    image: url(ui/styles/check.svg);
+}
+
+QCheckBox::indicator:hover {
+    border-color: var(--accent-color);
+}/* Современная цветовая схема для приложения поиска изображений */
+
+/* Глобальные переменные цветов */
+* {
+    --accent-color: #6366f1;
+    --accent-hover: #4f46e5;
+    --accent-pressed: #4338ca;
+    --background-color: #f9fafb;
+    --card-color: #ffffff;
+    --text-color: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --disabled-color: #d1d5db;
+    --slider-handle: #6366f1;
+    --slider-track: #e5e7eb;
+    --input-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Главное окно */
+QMainWindow, QWidget {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+}
+
+/* Группы элементов */
+QGroupBox {
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: var(--card-color);
+    padding: 12px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 16px;
+    top: -10px;
+    padding: 0 8px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    min-height: 36px;
+}
+
+QPushButton:hover {
+    background-color: var(--accent-hover);
+}
+
+QPushButton:pressed {
+    background-color: var(--accent-pressed);
+}
+
+QPushButton:disabled {
+    background-color: var(--disabled-color);
+    color: #9ca3af;
+}
+
+/* Кнопка отмены поиска */
+QPushButton[text="Отменить поиск"] {
+    background-color: var(--error-color);
+}
+
+QPushButton[text="Отменить поиск"]:hover {
+    background-color: #dc2626;
+}
+
+QPushButton[text="Отменить поиск"]:pressed {
+    background-color: #b91c1c;
+}
+
+/* Поля ввода и выбора */
+QComboBox, QSpinBox, QDoubleSpinBox {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 8px 12px;
+    background-color: var(--input-bg);
+    min-height: 24px;
+}
+
+QComboBox:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 2px solid var(--accent-color);
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 24px;
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(ui/styles/down-arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-color);
+    selection-background-color: var(--accent-color);
+    selection-color: white;
+}
+
+/* Полосы прокрутки */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #d1d5db;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #9ca3af;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: transparent;
+    height: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #d1d5db;
+    min-width: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #9ca3af;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    height: 0px;
+    width: 0px;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+/* Ползунки */
+QSlider::groove:horizontal {
+    border: none;
+    height: 6px;
+    background: var(--slider-track);
+    margin: 2px 0;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: var(--slider-handle);
+    border: none;
+    width: 18px;
+    height: 18px;
+    margin: -6px 0;
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: var(--accent-hover);
+}
+
+/* Метки */
+QLabel {
+    color: var(--text-color);
+    font-size: 10pt;
+}
+
+QLabel[objectName="preview_label"] {
+    border: 1px dashed var(--border-color);
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Индикаторы прогресса */
+QProgressBar {
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--slider-track);
+    color: var(--text-color);
+    font-weight: 600;
+    height: 10px;
+}
+
+QProgressBar::chunk {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+/* Разделитель */
+QSplitter::handle {
+    background-color: var(--border-color);
+    height: 1px;
+}
+
+QSplitter::handle:hover {
+    background-color: var(--accent-color);
+}
+
+/* Диалоги */
+QMessageBox {
+    background-color: var(--card-color);
+}
+
+QMessageBox QPushButton {
+    min-width: 100px;
+}
+
+/* Стили для виджетов результатов */
+QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+/* Стили для элементов результатов */
+QGroupBox[objectName="result_group"] {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+
+QGroupBox[objectName="result_group"]:hover {
+    border: 1px solid var(--accent-color);
+    background-color: #f5f5ff;
+}
+
+/* Заголовок результатов */
+QLabel[objectName="results_title"] {
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+/* Спиннеры и числовые поля */
+QSpinBox, QDoubleSpinBox {
+    padding-right: 20px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 20px;
+    border-radius: 0px;
+    background-color: var(--input-bg);
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: var(--border-color);
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url(ui/styles/up-arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url(ui/styles/down-arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+/* Панель результатов */
+QWidget[objectName="results_panel"] {
+    background-color: var(--background-color);
+}
+
+/* Форматирование */
+QFormLayout {
+    spacing: 16px;
+}
+
+/* Стили для выбранных элементов */
+QComboBox:focus, QSpinBox:focus, QPushButton:focus {
+    outline: none;
+}
+
+/* Анимации при наведении */
+QPushButton {
+    transition: background-color 0.2s;
+}

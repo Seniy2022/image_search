@@ -1,0 +1,13 @@
+# Основные зависимости
+numpy>=1.20.0
+PyQt5>=5.15.4
+opencv-python>=4.5.3.56
+opencv-contrib-python>=4.5.3.56
+
+# Для работы с изображениями
+Pillow>=8.3.1
+
+torch>=1.9.0
+torchvision>=0.10.0
+
+deepface>=0.0.75
